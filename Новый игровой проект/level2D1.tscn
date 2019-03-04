@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://mario_PNG88.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="mario_PNG88" type="Sprite" parent="."]
+position = Vector2( 311.045, 302.367 )
+scale = Vector2( 0.382016, 0.382016 )
+texture = ExtResource( 1 )
+

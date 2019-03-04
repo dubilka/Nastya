@@ -6,13 +6,8 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-func _on_Button_pressed():
-	#get_node("../Label").text = "Oh..."
-#func _my_level_was_completed():
-    get_tree().change_scene("res://level2D1.tscn")
