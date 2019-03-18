@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://mario_PNG88.png" type="Texture" id=1]
+[ext_resource path="res://mario_PNG88.gd" type="Script" id=2]
+[ext_resource path="res://Button.gd" type="Script" id=3]
+[ext_resource path="res://Button2.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="mario_PNG88" type="Sprite" parent="."]
+position = Vector2( 291.089, 275.82 )
+scale = Vector2( 0.394114, 0.391087 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 429.24
+margin_top = 101.243
+margin_right = 653.24
+margin_bottom = 171.243
+rect_scale = Vector2( 2.32785, 2.32785 )
+text = "Hey! Anyone there?"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 599.0
+margin_top = 246.0
+margin_right = 786.0
+margin_bottom = 307.0
+text = "Yes, I'm here"
+script = ExtResource( 3 )
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 620.0
+margin_top = 364.0
+margin_right = 775.0
+margin_bottom = 423.0
+text = "+ 50 hp"
+script = ExtResource( 4 )
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="mario_PNG88" method="_on_Button2_pressed" binds= [ 50 ]]
